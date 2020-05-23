@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		{% block title %}<!--definiendo el block "title"-->
+		{% endblock %}
+		<link rel="shortcut icon" href="{{ url_for('static', filename='imgs/favicon.ico') }}"><!--sintaxis de jinja2 paraa enlazar un favicon.ico-->
+	</head>
+	<body>
+		<h1>¡CAUCHOS YA!</h1> <!--sintaxis de jinja2 para establecer un titulo-->
+		
+		{% for value  in lista %} <!--sintaxis de jinja2 para establecer una lista-->
+		<p> {{ value }} </p>
+		{% endfor %}
+
+		{% block content %}<!--definiendo el block "content"-->
+		{% endblock %}
+	</body>
+</html>
