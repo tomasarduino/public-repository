@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")   ##direccion de la ruta final##
 def index():
-	titulo = "HOME"  ##Definiendo variable##
+	titulo = "Cauchos"  ##Definiendo variable##
 	lista = ["Marca","Dimiensiones","Precio","Disponibilidad"] ##Definiendo una lista
 	return render_template("index.html", titulo = titulo, lista = lista) ##Mostrando variable "titulo" en conjunto con indexx.html##
 
